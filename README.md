@@ -1,2 +1,1 @@
-# .vim
-vim by vundle.
+1.Run install.sh to install vundle.
