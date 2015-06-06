@@ -59,6 +59,7 @@ Bundle 'vim-scripts/ctrlp.vim'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'vim-scripts/UltiSnips'
 Bundle 'bling/vim-airline'
+Bundle 'scrooloose/syntastic'
 Bundle 'Valloric/YouCompleteMe'
 
 " 2.Git plugin not hosted on GitHub
@@ -87,7 +88,6 @@ filetype plugin indent on    " required
 
 "@1:vim-airline
 set laststatus=2
-let g:airline_detect_whitespace=0 
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme="bubblegum"
 
