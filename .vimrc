@@ -62,6 +62,7 @@ Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'Lokaltog/vim-easymotion'
 
 " 2.Git plugin not hosted on GitHub
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -126,3 +127,12 @@ let Tlist_Use_Right_Window=0   "在右侧窗口中显示taglist窗口
 ".cu:取消注释
 "Normal模式下，几乎所有命令前面都可以指定行数，如3.cs，注释3行
 "Visual模式下执行命令，会对选中的特定区块进行注释/反注释
+
+"@5:easymotion
+"(快捷键<Leader><Leader>h，即..h)
+let g:EasyMotion_smartcase = 1 
+map <Leader><leader>h <Plug>(easymotion-linebackward)
+map <Leader><Leader>j <Plug>(easymotion-j)
+map <Leader><Leader>k <Plug>(easymotion-k)
+map <Leader><leader>l <Plug>(easymotion-lineforward)                                                  
+map <Leader><leader>. <Plug>(easymotion-repeat)
