@@ -60,12 +60,6 @@ flags = [
 '-x',
 'c++',
 '-isystem',
-'./usr/include',
-'-isystem',
-'./usr/include/c++/4.9.2',
-'-isystem',
-'./usr/include/i386-linux-gnu/c++/4.9/',
-'-isystem',
 '../BoostParts',
 '-isystem',
 # This path will only work on OS X, but extra paths that don't exist are not
@@ -87,6 +81,10 @@ flags = [
 './tests/gmock',
 '-isystem',
 './tests/gmock/include',
+'-isystem',
+'./usr/include',
+'-isystem',
+'./usr/local/include',
 ]
 
 
