@@ -61,6 +61,7 @@ Bundle 'vim-scripts/UltiSnips'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/nerdcommenter'
 
 " 2.Git plugin not hosted on GitHub
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -103,7 +104,7 @@ let g:ycm_complete_in_comments=1 "在注释中也能补全
 let g:ycm_seed_identifiers_with_syntax=1  "语法关键字补全
 let g:ycm_min_num_of_chars_for_completion=2  "从第2个字符开始补全
 
-let g:ycm_key_invoke_completion='<c-l>' "全局补全触发
+let g:ycm_key_invoke_completion='<c-l>'                  "全局补全触发
 let g:ycm_key_list_select_completion=['<c-n>', '<Down>'] "补全选择<向下>
 let g:ycm_key_list_previous_completion=['<c-p>', '<Up>'] "补全选择<向上>
 
@@ -113,6 +114,15 @@ nnoremap <leader>jl :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>jj :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 "@3:taglist
-"let Tlist_Auto_Open=1          "在启动VIM后，自动打开taglist窗口
+"let Tlist_Auto_Open=1         "在启动VIM后，自动打开taglist窗口
 let Tlist_Exit_OnlyWindow=1    "如果taglist窗口是最后一个窗口，则退出vim
 let Tlist_Use_Right_Window=0   "在右侧窗口中显示taglist窗口
+
+"@4:nerdcommenter
+".ca:切换注释方式(c/c++)
+".cc:注释当前行
+".cs:以"性感"的方式注释
+".cA:当前行尾添加注释，并进入insert模式
+".cu:取消注释
+"Normal模式下，几乎所有命令前面都可以指定行数，如3.cs，注释3行
+"Visual模式下执行命令，会对选中的特定区块进行注释/反注释
