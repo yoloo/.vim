@@ -82,13 +82,11 @@ flags = [
 '-isystem',
 './tests/gmock/include',
 '-isystem',
-'./usr/include',
+'/usr/include',
 '-isystem',
-'./usr/local/include',
+'/usr/local/include',
 '-isystem',
-'/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1',
-'-isystem',
-'/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include',
+'/usr/include/i386-linux-gnu/c++/4.9',
 ]
 
 
