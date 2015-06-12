@@ -61,6 +61,7 @@ Bundle 'vim-scripts/UltiSnips'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'vim-scripts/Markdown'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-easymotion'
 
@@ -90,6 +91,7 @@ filetype plugin indent on    " required
 
 "@1:vim-airline
 set laststatus=2
+let g:airline_detect_whitespace=0
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme="bubblegum"
 
@@ -130,9 +132,9 @@ let Tlist_Use_Right_Window=0   "在右侧窗口中显示taglist窗口
 
 "@5:easymotion
 "(快捷键<Leader><Leader>h，即..h)
-let g:EasyMotion_smartcase = 1 
+let g:EasyMotion_smartcase = 1
 map <Leader><leader>h <Plug>(easymotion-linebackward)
 map <Leader><Leader>j <Plug>(easymotion-j)
 map <Leader><Leader>k <Plug>(easymotion-k)
-map <Leader><leader>l <Plug>(easymotion-lineforward)                                                  
+map <Leader><leader>l <Plug>(easymotion-lineforward)
 map <Leader><leader>. <Plug>(easymotion-repeat)
