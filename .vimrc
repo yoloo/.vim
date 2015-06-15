@@ -91,7 +91,7 @@ filetype plugin indent on    " required
 
 "@1:vim-airline
 set laststatus=2
-let g:airline_detect_whitespace=0
+"let g:airline_detect_whitespace=0
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme="bubblegum"
 
@@ -120,6 +120,7 @@ nnoremap <leader>jj :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "let Tlist_Auto_Open=1         "在启动VIM后，自动打开taglist窗口
 let Tlist_Exit_OnlyWindow=1    "如果taglist窗口是最后一个窗口，则退出vim
 let Tlist_Use_Right_Window=0   "在右侧窗口中显示taglist窗口
+map <F3> :silent! Tlist<CR>    "开启/关闭taglist快捷键
 
 "@4:nerdcommenter
 ".ca:切换注释方式(c/c++)
@@ -138,3 +139,6 @@ map <Leader><Leader>j <Plug>(easymotion-j)
 map <Leader><Leader>k <Plug>(easymotion-k)
 map <Leader><leader>l <Plug>(easymotion-lineforward)
 map <Leader><leader>. <Plug>(easymotion-repeat)
+
+"@6:nerdtree
+map <F2> :silent! NERDTreeToggle<CR> "开启/关闭nerdtree快捷键
