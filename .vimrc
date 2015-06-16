@@ -64,6 +64,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-scripts/Markdown'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'godlygeek/tabular'
 
 " 2.Git plugin not hosted on GitHub
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -89,6 +90,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"@0:global mapleader
+let mapleader="."  "leader映射为点号
+
 "@1:vim-airline
 set laststatus=2
 "let g:airline_detect_whitespace=0
@@ -97,8 +101,6 @@ let g:airline_theme="bubblegum"
 
 "@2:YouCompleteMe
 "set completeopt=longest,menu  " 关掉补全时的预览窗口
-
-let mapleader="."  "leader映射为逗号[GoToDeclaration/GoToDefinition/GoToDefinitionElseDeclaration]
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0   "关闭每次加载.ycm_extra_conf.py配置提示
 let g:ycm_show_diagnostics_ui=0  "关闭ycm的syntastic
@@ -142,3 +144,19 @@ map <Leader><leader>. <Plug>(easymotion-repeat)
 
 "@6:nerdtree
 map <F2> :silent! NERDTreeToggle<CR> "开启/关闭nerdtree快捷键
+
+"@7:tabularize
+nmap <Leader>a& :Tabularize /&<CR>
+vmap <Leader>a& :Tabularize /&<CR>
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a: :Tabularize /:<CR>
+vmap <Leader>a: :Tabularize /:<CR>
+nmap <Leader>a:: :Tabularize /:\zs<CR>
+vmap <Leader>a:: :Tabularize /:\zs<CR>
+nmap <Leader>a, :Tabularize /,<CR>
+vmap <Leader>a, :Tabularize /,<CR>
+nmap <Leader>a,, :Tabularize /,\zs<CR>
+vmap <Leader>a,, :Tabularize /,\zs<CR>
+nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
