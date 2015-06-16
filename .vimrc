@@ -57,6 +57,7 @@ Bundle 'vim-scripts/Solarized'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'vim-scripts/ctrlp.vim'
 Bundle 'vim-scripts/taglist.vim'
+Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/UltiSnips'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
@@ -118,13 +119,19 @@ nnoremap <leader>jk :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>jl :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>jj :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-"@3:taglist
+"@3:nerdtree
+map <F2> :silent! NERDTreeToggle<CR> "开启/关闭nerdtree快捷键
+
+"@4:taglist
 "let Tlist_Auto_Open=1         "在启动VIM后，自动打开taglist窗口
 let Tlist_Exit_OnlyWindow=1    "如果taglist窗口是最后一个窗口，则退出vim
 let Tlist_Use_Right_Window=0   "在右侧窗口中显示taglist窗口
 map <F3> :silent! Tlist<CR>    "开启/关闭taglist快捷键
 
-"@4:nerdcommenter
+"@5:tagbar
+map <F4> :silent! TagbarToggle<CR> "开启/关闭tagbar快捷键
+
+"@6:nerdcommenter
 ".ca:切换注释方式(c/c++)
 ".cc:注释当前行
 ".cs:以"性感"的方式注释
@@ -133,7 +140,7 @@ map <F3> :silent! Tlist<CR>    "开启/关闭taglist快捷键
 "Normal模式下，几乎所有命令前面都可以指定行数，如3.cs，注释3行
 "Visual模式下执行命令，会对选中的特定区块进行注释/反注释
 
-"@5:easymotion
+"@7:easymotion
 "(快捷键<Leader><Leader>h，即..h)
 let g:EasyMotion_smartcase = 1
 map <Leader><leader>h <Plug>(easymotion-linebackward)
@@ -142,10 +149,7 @@ map <Leader><Leader>k <Plug>(easymotion-k)
 map <Leader><leader>l <Plug>(easymotion-lineforward)
 map <Leader><leader>. <Plug>(easymotion-repeat)
 
-"@6:nerdtree
-map <F2> :silent! NERDTreeToggle<CR> "开启/关闭nerdtree快捷键
-
-"@7:tabularize
+"@8:tabularize
 nmap <Leader>a& :Tabularize /&<CR>
 vmap <Leader>a& :Tabularize /&<CR>
 nmap <Leader>a= :Tabularize /=<CR>
