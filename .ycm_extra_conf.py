@@ -38,7 +38,7 @@ flags = [
 '-Wall',
 '-Wextra',
 '-Werror',
-'-Wc++98-compat',
+'-Wnoc++98-compat',
 '-Wno-long-long',
 '-Wno-variadic-macros',
 '-fexceptions',
@@ -86,7 +86,7 @@ flags = [
 '-isystem',
 '/usr/local/include',
 '-isystem',
-'/usr/include/i386-linux-gnu/c++/4.9',
+'/usr/include/i386-linux-gnu/c++',
 ]
 
 

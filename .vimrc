@@ -101,7 +101,7 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline_theme="bubblegum"
 
 "@2:YouCompleteMe
-"set completeopt=longest,menu  " 关掉补全时的预览窗口
+set completeopt=longest,menu  " 关掉补全时的预览窗口
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0   "关闭每次加载.ycm_extra_conf.py配置提示
 let g:ycm_show_diagnostics_ui=0  "关闭ycm的syntastic
@@ -164,3 +164,8 @@ nmap <Leader>a,, :Tabularize /,\zs<CR>
 vmap <Leader>a,, :Tabularize /,\zs<CR>
 nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+
+"@9:syntastic
+"支持c++11
+let g:syntastic_cpp_compiler = 'g++'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
