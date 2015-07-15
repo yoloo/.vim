@@ -66,6 +66,8 @@ Bundle 'vim-scripts/Markdown'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'godlygeek/tabular'
+Bundle 'tpope/vim-surround'
+Bundle 'Yggdroot/indentLine'
 
 " 2.Git plugin not hosted on GitHub
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -169,3 +171,31 @@ vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 "支持c++11
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
+
+"@10:surround
+"Normal mode
+"-----------
+"ds  - delete a surrounding
+"cs  - change a surrounding
+"ys  - add a surrounding
+"yS  - add a surrounding and place the surrounded text on a new line + indent it
+"yss - add a surrounding to the whole line
+"ySs - add a surrounding to the whole line, place it on a new line + indent it
+"ySS - same as ySs
+
+"Visual mode
+"-----------
+"s   - in visual mode, add a surrounding
+"S   - in visual mode, add a surrounding but place text on new line + indent it
+
+"Insert mode
+"-----------
+"<CTRL-s> - in insert mode, add a surrounding
+"<CTRL-s><CTRL-s> - in insert mode, add a new line + surrounding + indent
+"<CTRL-g>s - same as <CTRL-s>
+"<CTRL-g>S - same as <CTRL-s><CTRL-s>
+
+"@11.indent-line
+map <leader>il :IndentLinesToggle<CR>
+let g:indentLine_color_term = 239
+let g:indentLine_char = '┆'
