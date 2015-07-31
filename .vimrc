@@ -68,6 +68,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-surround'
 Bundle 'Yggdroot/indentLine'
+Bundle 'Raimondi/delimitMate'
 
 " 2.Git plugin not hosted on GitHub
 "Bundle 'git://git.wincent.com/command-t.git'
