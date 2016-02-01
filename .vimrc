@@ -69,6 +69,8 @@ Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-surround'
 Bundle 'Yggdroot/indentLine'
 Bundle 'Raimondi/delimitMate'
+Bundle 'rdnetto/YCM-Generator'
+Bundle 'JamshedVesuna/vim-markdown-preview'
 
 " 2.Git plugin not hosted on GitHub
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -106,7 +108,7 @@ let g:airline_theme="bubblegum"
 "@2:YouCompleteMe
 set completeopt=longest,menu  " 关掉补全时的预览窗口
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf=0   "关闭每次加载.ycm_extra_conf.py配置提示
+let g:ycm_confirm_extra_conf=0  "关闭每次加载.ycm_extra_conf.py配置提示
 let g:ycm_show_diagnostics_ui=0  "关闭ycm的syntastic
 let g:ycm_complete_in_strings=1  "在字符串中也能补全
 let g:ycm_complete_in_comments=1 "在注释中也能补全
@@ -200,3 +202,6 @@ let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
 map <leader>il :IndentLinesToggle<CR>
 let g:indentLine_color_term = 239
 let g:indentLine_char = '┆'
+
+"@12.YCM-Generator
+"open vim, then ':YcmGenerateConfig'
