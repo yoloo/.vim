@@ -71,6 +71,7 @@ Bundle 'Yggdroot/indentLine'
 Bundle 'Raimondi/delimitMate'
 Bundle 'rdnetto/YCM-Generator'
 Bundle 'JamshedVesuna/vim-markdown-preview'
+Bundle 'pangloss/vim-javascript'
 
 " 2.Git plugin not hosted on GitHub
 "Bundle 'git://git.wincent.com/command-t.git'
