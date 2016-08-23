@@ -85,8 +85,6 @@ flags = [
 '/usr/include',
 '-isystem',
 '/usr/local/include',
-'-isystem',
-'/usr/include/i386-linux-gnu/c++',
 ]
 
 
