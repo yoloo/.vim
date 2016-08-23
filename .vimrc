@@ -19,7 +19,6 @@ set smarttab               "当使用et将Tab替换为空格之后，按下一�
 
 set t_Co=256               "设置256色显示
 "set colorcolumn=85         "彩色显示第85行
-set background=dark        "使用solarized
 set cursorcolumn           "光标垂直高亮
 set cursorline             "光标所在行加下划线
 
@@ -53,7 +52,8 @@ Bundle 'gmarik/vundle'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " 1.plugin on GitHub repo
-Bundle 'vim-scripts/Solarized'
+"Bundle 'altercation/vim-colors-solarized'
+Bundle 'tomasr/molokai'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'vim-scripts/ctrlp.vim'
 Bundle 'vim-scripts/taglist.vim'
@@ -104,7 +104,7 @@ let mapleader="."  "leader映射为点号
 set laststatus=2
 "let g:airline_detect_whitespace=0
 let g:airline#extensions#tabline#enabled=1
-let g:airline_theme="bubblegum"
+let g:airline_theme="dark"
 
 "@2:YouCompleteMe
 set completeopt=longest,menu  " 关掉补全时的预览窗口
@@ -206,3 +206,16 @@ let g:indentLine_char = '┆'
 
 "@12.YCM-Generator
 "open vim, then ':YcmGenerateConfig'
+
+"@13.vim-themes
+set background=dark        
+
+"使用solarized
+"let g:solarized_termtrans=1
+"let g:solarized_contrast="normal"
+"let g:solarized_visibility="normal"
+"colorscheme solarized
+
+"使用molokai
+let g:molokai_original=1
+colorscheme molokai
