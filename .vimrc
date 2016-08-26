@@ -102,7 +102,7 @@ let mapleader="."  "leader映射为点号
 
 "@1:vim-airline
 set laststatus=2
-"let g:airline_detect_whitespace=0
+let g:airline_detect_whitespace=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme="dark"
 
@@ -110,7 +110,7 @@ let g:airline_theme="dark"
 set completeopt=longest,menu  " 关掉补全时的预览窗口
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0  "关闭每次加载.ycm_extra_conf.py配置提示
-let g:ycm_show_diagnostics_ui=0  "关闭ycm的syntastic
+let g:ycm_show_diagnostics_ui=1  "开启ycm的syntastic
 let g:ycm_complete_in_strings=1  "在字符串中也能补全
 let g:ycm_complete_in_comments=1 "在注释中也能补全
 let g:ycm_seed_identifiers_with_syntax=1  "语法关键字补全
