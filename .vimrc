@@ -72,6 +72,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'rdnetto/YCM-Generator'
 Bundle 'JamshedVesuna/vim-markdown-preview'
 Bundle 'pangloss/vim-javascript'
+Bundle 'vim-airline/vim-airline-themes'
 
 " 2.Git plugin not hosted on GitHub
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -104,7 +105,7 @@ let mapleader="."  "leader映射为点号
 set laststatus=2
 let g:airline_detect_whitespace=1
 let g:airline#extensions#tabline#enabled=1
-let g:airline_theme="dark"
+let g:airline_theme="molokai"
 
 "@2:YouCompleteMe
 set completeopt=longest,menu  " 关掉补全时的预览窗口
